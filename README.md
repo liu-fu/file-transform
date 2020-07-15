@@ -14,6 +14,6 @@ npm run start_server --production
 ```
 服务器监听端口为9000
 ## 效果图
-![1.png](../pic/1.png)
-![2.png](../pic/2.png)
-![3.png](../pic/3.png)
+![1.png](./pic/1.png)
+![2.png](./pic/2.png)
+![3.png](./pic/3.png)
