@@ -1,0 +1,138 @@
+#container {
+    background-color: white;
+    border: grey solid 2px;
+    box-shadow: darkgray 1px 1px 1px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+a {
+    width: 50%;
+    padding: 5px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    margin: 2%;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+input {
+    float: left;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+button {
+    width: 20%;
+    padding: 5px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    margin: 2%;
+    overflow: hidden;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    width: 80%;
+    padding: 0;
+    margin: 0 7%;
+}
+
+li {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    border: 1px green solid;
+    border-radius: 30px;
+    padding: 5px 4%;
+}
+
+li p {
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 4%;
+    margin: 0;
+    display: inline-block;
+}
+
+@keyframes processing {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes processing {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+.processing {
+    width: 15px;
+    height: 15px;
+    border: 3px grey solid;
+    border-radius: 50%;
+    border-top: white soild;
+    animation: processing 1s linear infinite;
+    -webkit-animation: processing 1s linear infinite;
+}
+
+.bar {
+    width: 40%;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.bar-inner {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#file-error-p {
+    display: inline-block;
+    width: 30%;
+    color: red;
+}
+
+#file-finish-p {
+    display: inline-block;
+    width: 30%;
+    color: green;
+}
+
+#eror-p {
+    color: red;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
